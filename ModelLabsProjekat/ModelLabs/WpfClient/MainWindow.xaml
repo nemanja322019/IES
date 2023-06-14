@@ -1,0 +1,169 @@
+﻿<Window x:Class="WpfClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfClient"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="508" Width="756.8">
+    <Grid>
+        <Grid.Resources>
+            <Style x:Key="aeroCheckListBoxStyle" TargetType="{x:Type ListBox}">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type ListBox}">
+                            <Border CornerRadius="0" Background="{TemplateBinding Background}">
+                                <ScrollViewer HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Auto">
+                                </ScrollViewer>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+
+            </Style>
+
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="0*"/>
+        </Grid.RowDefinitions>
+
+        <TabControl x:Name="TabControl" Background="LightYellow" Margin="0,0,1,-41" Grid.RowSpan="2">
+            <TabItem Header="Get Values">
+                <Grid Margin="0,6,-2,-139" Background="LightYellow" Height="521">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="11*"/>
+                        <ColumnDefinition Width="33*"/>
+                        <ColumnDefinition Width="142*"/>
+                    </Grid.ColumnDefinitions>
+
+
+
+                    <Label x:Name="labelaGid" FontSize="14" FontWeight="Bold" Content="GID" HorizontalAlignment="Left" Margin="216,-48,0,0" VerticalAlignment="Top" Grid.Column="2"/>
+                    <ComboBox x:Name="comboBoxGids" ItemStringFormat="0x{0:x16}" ItemsSource="{Binding Path=ComboBox1}" SelectedItem="{Binding Path=Gid1}" Margin="257,-47,0,0"  Height="26" VerticalAlignment="Top" HorizontalAlignment="Left" Width="281" Grid.Column="2"/>
+                    <Label x:Name="label1_1" FontSize="14" FontWeight="Bold" Content="Atributes" HorizontalAlignment="Left" Margin="216,13,0,0" VerticalAlignment="Top" Height="31" Grid.Column="2"/>
+
+
+                    <ListBox x:Name="listBox1"  ItemsSource="{Binding Path=Atributi1, UpdateSourceTrigger=PropertyChanged}" SelectionMode="Multiple"  Background="White" Margin="216,49,35,314" Grid.Column="2"  >
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                    <CheckBox  Margin="3" Content="{Binding}" IsChecked="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type ListBoxItem}}, Path=IsSelected, Mode=TwoWay}" />
+                                </Grid>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ListBox>
+
+                    <Button x:Name="button_1" Content="GetValues" Margin="216,0,0,261" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="101" Click="button_1_Click" Grid.Column="2" />
+                    <Label x:Name="label3_1" Content="Result" Margin="20,-34,426,0" Height="37" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Grid.ColumnSpan="3" />
+                    <TextBox x:Name="richTextBox_1" ScrollViewer.CanContentScroll="True"   IsReadOnly="True"  Margin="20,13,397,248" Grid.ColumnSpan="3">
+                        <TextBox.Style>
+                            <Style>
+                                <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Visible"></Setter>
+                                <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto"></Setter>
+                            </Style>
+                        </TextBox.Style>
+                    </TextBox>
+                </Grid>
+            </TabItem>
+
+
+
+
+            <TabItem Header="GetExtentValues">
+                <Grid Margin="0,2,-0.2,-0.8" Background="LightYellow" Height="424" VerticalAlignment="Top">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="16*"/>
+                        <ColumnDefinition Width="27*"/>
+                        <ColumnDefinition Width="423*"/>
+                        <ColumnDefinition Width="20*"/>
+                        <ColumnDefinition Width="259*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label x:Name="label_2" FontSize="14" FontWeight="Bold" Content="Model code" HorizontalAlignment="Left" Margin="288,26,0,0" VerticalAlignment="Top" Grid.Column="2"/>
+                    <ComboBox x:Name="comboBox_2"   Margin="396,29,0,0" SelectedItem="{Binding Path=ModelKod2}" ItemsSource="{Binding Path=ComboBox2}"  Height="26" VerticalAlignment="Top" HorizontalAlignment="Left" Width="285" Grid.ColumnSpan="3" Grid.Column="2"/>
+                    <Label x:Name="label1_2" FontSize="14" FontWeight="Bold" Content="Properties" HorizontalAlignment="Left" Margin="351,86,0,0" VerticalAlignment="Top" Height="31" Grid.Column="2" Grid.ColumnSpan="2"/>
+
+
+                    <ListBox x:Name="listBox2"  ItemsSource="{Binding Path=Atributi2, UpdateSourceTrigger=PropertyChanged}" SelectionMode="Multiple"  Background="White" Margin="332,122,0,141" Grid.ColumnSpan="3" Grid.Column="2" >
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                    <CheckBox  Margin="3" Content="{Binding}" IsChecked="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type ListBoxItem}}, Path=IsSelected, Mode=TwoWay}" />
+                                </Grid>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ListBox>
+
+
+                    <Button x:Name="button_2"  Content="GetExtentValues" Margin="351,0,0,92" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="101" Click="button_2_Click" Grid.Column="2" RenderTransformOrigin="0.467,1.58" Grid.ColumnSpan="3"/>
+
+                    <Label x:Name="label3_2" Content="Result" Margin="14,67,290,0" Height="37" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Grid.Column="1" Grid.ColumnSpan="2" />
+                    <TextBox x:Name="richTextBox_2" ScrollViewer.CanContentScroll="True"   IsReadOnly="True"  Margin="14,109,114,70" Grid.Column="1" Grid.ColumnSpan="2">
+                        <TextBox.Style>
+                            <Style>
+                                <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Visible"></Setter>
+                                <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto"></Setter>
+                            </Style>
+                        </TextBox.Style>
+                    </TextBox>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="GetRelatedValues">
+                <Grid Margin="0,2,0.8,-3.8">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="89*"/>
+                        <ColumnDefinition Width="40*"/>
+                        <ColumnDefinition Width="140*"/>
+                        <ColumnDefinition Width="480*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label x:Name="label_3" FontSize="14" FontWeight="Bold" Content="Gid" HorizontalAlignment="Left" Margin="10,16,0,0" VerticalAlignment="Top"/>
+                    <ComboBox x:Name="comboBox_3" ItemStringFormat="0x{0:x16}" SelectedItem="{Binding Path=Gid3}" ItemsSource="{Binding Path=ComboBox3}" Margin="10,45,0,0"  Height="24" VerticalAlignment="Top" HorizontalAlignment="Left" Width="277" Grid.ColumnSpan="4"/>
+                    <Label x:Name="label4_3" Content="Assosiation" Margin="10,74,28,0" Height="32" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" RenderTransformOrigin="-2.032,2.937" Grid.ColumnSpan="3" />
+                    <Label x:Name="label5_3" Content="PropertyID" Margin="30,101,11,0" Height="30" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Grid.ColumnSpan="3" />
+                    <ComboBox x:Name="comboBox1_3" SelectedItem="{Binding Path=AtributID}" ItemsSource="{Binding Path=AtributIDs, Mode=TwoWay}"  Margin="38,101,0,0"  Height="23" VerticalAlignment="Top" HorizontalAlignment="Left" Width="160" RenderTransformOrigin="0.5,0.5" Grid.Column="2" Grid.ColumnSpan="2"/>
+
+
+
+
+
+                    <Label x:Name="label6_3" Content="Type" Margin="30,131,45,0" Height="34" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Grid.ColumnSpan="3" />
+                    <ComboBox x:Name="comboBo2_3"  Margin="38,136,0,0" SelectedItem="{Binding Path=Tip}" ItemsSource="{Binding Path=Tipovi, UpdateSourceTrigger=PropertyChanged}"  Height="23" VerticalAlignment="Top" HorizontalAlignment="Left" Width="160" Grid.Column="2" Grid.ColumnSpan="2"/>
+
+                    <Label x:Name="label1_3" FontSize="14" FontWeight="Bold" Content="Properties" HorizontalAlignment="Left" Margin="10,170,0,0" VerticalAlignment="Top" Height="31"/>
+                    <!--<DataGrid x:Name="dataGrid_3"   IsReadOnly="True" SelectionMode="Extended" Margin="10,201,0,70" HorizontalAlignment="Left" Width="277" Grid.ColumnSpan="2">
+                        <DataGrid.RowHeaderTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                    <CheckBox IsChecked="{Binding Path=IsSelected, Mode=TwoWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGridRow}}}"/>
+                                </Grid>
+                            </DataTemplate>
+                        </DataGrid.RowHeaderTemplate>
+                    </DataGrid>-->
+                    <ListBox x:Name="listBox3"  ItemsSource="{Binding Path=Atributi3, UpdateSourceTrigger=PropertyChanged}" SelectionMode="Multiple"  Background="White" Margin="38,184,405,66" Grid.Column="1" Grid.ColumnSpan="3" >
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                    <CheckBox  Margin="3" Content="{Binding}" IsChecked="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type ListBoxItem}}, Path=IsSelected, Mode=TwoWay}" />
+                                </Grid>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ListBox>
+                    <Button x:Name="button_3"  Content="GetRelatedValues" Margin="21,0,0,128" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="101" Click="button_3_Click" Grid.ColumnSpan="2"/>
+
+                    <Label x:Name="label3_3" Content="Result" Margin="89,32,10,0" Height="37" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Grid.Column="3" />
+                    <TextBox x:Name="richTextBox_3" ScrollViewer.CanContentScroll="True"   IsReadOnly="True"  Margin="89,85,10,66" Grid.Column="3">
+                        <TextBox.Style>
+                            <Style>
+                                <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Visible"></Setter>
+                                <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto"></Setter>
+                            </Style>
+                        </TextBox.Style>
+                    </TextBox>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

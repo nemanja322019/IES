@@ -1,0 +1,162 @@
+16.4.2023. 22:06:01 : Network Model Service Test Client is up and running...
+16.4.2023. 22:06:01 : Result directory: ../Results
+16.4.2023. 22:06:05 : Network Model Service Test Client stopped.
+17.4.2023. 04:17:55 : Network Model Service Test Client is up and running...
+17.4.2023. 04:17:55 : Result directory: ../Results
+17.4.2023. 04:18:14 : Getting values method started.
+17.4.2023. 04:18:14 : Failed to get model type code for DMS type: 0. Invalid DMS type
+17.4.2023. 04:18:14 : Getting values method for entered id = 1 failed.
+	Failed to get model type code for DMS type: 0. Invalid DMS type
+17.4.2023. 04:18:28 : Getting extent values method started.
+17.4.2023. 04:18:28 : Getting extent values method successfully finished.
+17.4.2023. 04:19:13 : Getting values method started.
+17.4.2023. 04:19:13 : Failed to get model type code for DMS type: 0. Invalid DMS type
+17.4.2023. 04:19:13 : Getting values method for entered id = 100000001 failed.
+	Failed to get model type code for DMS type: 0. Invalid DMS type
+17.4.2023. 04:19:38 : Entering entity id failed. Please use hex (0x) or decimal format.
+17.4.2023. 04:19:38 : GetValues failed. Input string was not in a correct format.
+17.4.2023. 04:20:13 : Apply update method started.
+17.4.2023. 04:20:13 : Apply update method finished. 
+Update result: Succeeded
+Message: Applying delta to network model successfully finished.
+GlobalId pairs:
+Client globalId: 0x00000001ffffffff	 - Server globalId: 0x0000000100000007
+Client globalId: 0x00000002ffffffff	 - Server globalId: 0x0000000200000007
+Client globalId: 0x00000003ffffffff	 - Server globalId: 0x0000000300000007
+Client globalId: 0x00000004ffffffff	 - Server globalId: 0x0000000400000005
+Client globalId: 0x00000005ffffffff	 - Server globalId: 0x0000000500000007
+Client globalId: 0x00000006ffffffff	 - Server globalId: 0x0000000600000005
+Client globalId: 0x00000007ffffffff	 - Server globalId: 0x0000000700000005
+
+17.4.2023. 04:20:39 : Getting values method started.
+17.4.2023. 04:20:39 : Getting values method successfully finished.
+17.4.2023. 04:21:13 : Entering association failed. System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at FTN.Services.NetworkModelService.TestClient.Program.InputAssociation() in C:\Users\Nex\Desktop\IES\Projekat\ModelLabsProjekat\ModelLabs\NetworkModelService\Test\NMSTestClient\Program.cs:line 235
+17.4.2023. 04:21:13 : GetRelatedValues failed. Input string was not in a correct format.
+17.4.2023. 04:21:28 : Network Model Service Test Client stopped.
+1.6.2023. 23:47:56 : Network Model Service Test Client is up and running...
+1.6.2023. 23:47:56 : Result directory: ../Results
+1.6.2023. 23:49:37 : Entering entity id failed. Please use hex (0x) or decimal format.
+1.6.2023. 23:49:37 : GetValues failed. Input string was not in a correct format.
+1.6.2023. 23:49:42 : Apply update method started.
+1.6.2023. 23:49:43 : Apply update method finished. 
+Update result: Succeeded
+Message: Applying delta to network model successfully finished.
+GlobalId pairs:
+Client globalId: 0x00000001ffffffff	 - Server globalId: 0x000000010000000b
+Client globalId: 0x00000002ffffffff	 - Server globalId: 0x000000020000000b
+Client globalId: 0x00000003ffffffff	 - Server globalId: 0x000000030000000b
+Client globalId: 0x00000004ffffffff	 - Server globalId: 0x0000000400000008
+Client globalId: 0x00000005ffffffff	 - Server globalId: 0x000000050000000b
+Client globalId: 0x00000006ffffffff	 - Server globalId: 0x0000000600000008
+Client globalId: 0x00000007ffffffff	 - Server globalId: 0x0000000700000008
+
+1.6.2023. 23:50:08 : Getting values method started.
+1.6.2023. 23:50:23 : Getting values method for entered id = 8589934591 failed.
+	Getting values for resource with ID = 0x00000001ffffffff failed. Failed to get values for entity with GID = 0x00000001ffffffff. Entity  (GID = 0x00000001ffffffff) does not exist.
+1.6.2023. 23:50:45 : Getting values method started.
+1.6.2023. 23:50:45 : Getting values method successfully finished.
+1.6.2023. 23:51:26 : Getting extent values method started.
+1.6.2023. 23:51:26 : Getting extent values method successfully finished.
+1.6.2023. 23:54:09 : Entering association failed. System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at FTN.Services.NetworkModelService.TestClient.Program.InputAssociation() in C:\Users\Nex\Desktop\IES\Projekat\ModelLabsProjekat\ModelLabs\NetworkModelService\Test\NMSTestClient\Program.cs:line 235
+1.6.2023. 23:54:09 : GetRelatedValues failed. Input string was not in a correct format.
+1.6.2023. 23:56:24 : Getting extent values method started.
+1.6.2023. 23:56:24 : Getting extent values method successfully finished.
+1.6.2023. 23:58:17 : Getting extent values method started.
+1.6.2023. 23:58:17 : Getting extent values method successfully finished.
+2.6.2023. 00:01:29 : Entering association failed. System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at FTN.Services.NetworkModelService.TestClient.Program.InputAssociation() in C:\Users\Nex\Desktop\IES\Projekat\ModelLabsProjekat\ModelLabs\NetworkModelService\Test\NMSTestClient\Program.cs:line 254
+2.6.2023. 00:01:29 : GetRelatedValues failed. Input string was not in a correct format.
+2.6.2023. 00:08:49 : Entering association failed. System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at FTN.Services.NetworkModelService.TestClient.Program.InputAssociation() in C:\Users\Nex\Desktop\IES\Projekat\ModelLabsProjekat\ModelLabs\NetworkModelService\Test\NMSTestClient\Program.cs:line 254
+2.6.2023. 00:08:49 : GetRelatedValues failed. Input string was not in a correct format.
+2.6.2023. 00:09:23 : Getting related values method started.
+2.6.2023. 00:09:50 : Getting related values method  failed for sourceGlobalId = 17179869192 and association (propertyId = REGULATINGCONTROL, type = REGULATINGCONTROL_MODE). Reason: Getting related values for resource with ID = 0x0000000400000008 failed. Failed to get related values for source GID = 0x0000000400000008. Entity with GID = 0x0000000400000008 does not contain prperty with Id = REGULATINGCONTROL..
+2.6.2023. 00:10:14 : Getting related values method started.
+2.6.2023. 00:10:58 : Getting related values method  failed for sourceGlobalId = 17179869192 and association (propertyId = REGULATINGCONTROL, type = REGULATINGCONTROL). Reason: Getting related values for resource with ID = 0x0000000400000008 failed. Failed to get related values for source GID = 0x0000000400000008. Entity with GID = 0x0000000400000008 does not contain prperty with Id = REGULATINGCONTROL..
+2.6.2023. 00:11:36 : Entering entity id failed. Please use hex (0x) or decimal format.
+2.6.2023. 00:11:36 : GetRelatedValues failed. Input string was not in a correct format.
+2.6.2023. 00:12:24 : Network Model Service Test Client is up and running...
+2.6.2023. 00:12:24 : Result directory: ../Results
+2.6.2023. 00:12:27 : Apply update method started.
+2.6.2023. 00:12:27 : Apply update method finished. 
+Update result: Succeeded
+Message: Applying delta to network model successfully finished.
+GlobalId pairs:
+Client globalId: 0x00000001ffffffff	 - Server globalId: 0x000000010000000c
+Client globalId: 0x00000002ffffffff	 - Server globalId: 0x000000020000000c
+Client globalId: 0x00000003ffffffff	 - Server globalId: 0x000000030000000c
+Client globalId: 0x00000004ffffffff	 - Server globalId: 0x0000000400000009
+Client globalId: 0x00000005ffffffff	 - Server globalId: 0x000000050000000c
+Client globalId: 0x00000006ffffffff	 - Server globalId: 0x0000000600000009
+Client globalId: 0x00000007ffffffff	 - Server globalId: 0x0000000700000009
+
+2.6.2023. 00:13:41 : Getting related values method started.
+2.6.2023. 00:22:29 : Network Model Service Test Client is up and running...
+2.6.2023. 00:22:29 : Result directory: ../Results
+2.6.2023. 00:22:33 : Apply update method started.
+2.6.2023. 00:22:33 : Apply update method finished. 
+Update result: Succeeded
+Message: Applying delta to network model successfully finished.
+GlobalId pairs:
+Client globalId: 0x00000001ffffffff	 - Server globalId: 0x000000010000000d
+Client globalId: 0x00000002ffffffff	 - Server globalId: 0x000000020000000d
+Client globalId: 0x00000003ffffffff	 - Server globalId: 0x000000030000000d
+Client globalId: 0x00000004ffffffff	 - Server globalId: 0x000000040000000a
+Client globalId: 0x00000005ffffffff	 - Server globalId: 0x000000050000000d
+Client globalId: 0x00000006ffffffff	 - Server globalId: 0x000000060000000a
+Client globalId: 0x00000007ffffffff	 - Server globalId: 0x000000070000000a
+
+2.6.2023. 00:23:06 : Getting related values method started.
+2.6.2023. 00:23:32 : Getting related values method  failed for sourceGlobalId = 21474836493 and association (propertyId = REGULARINTERVALSCHEDULE, type = REGULARTIMEPOINT_VALUE1). Reason: Getting related values for resource with ID = 0x000000050000000d failed. Failed to get related values for source GID = 0x000000050000000d. Entity with GID = 0x000000050000000d does not contain prperty with Id = REGULARINTERVALSCHEDULE..
+2.6.2023. 00:24:36 : Getting related values method started.
+2.6.2023. 00:24:46 : Getting related values method  failed for sourceGlobalId = 21474836493 and association (propertyId = REGULARINTERVALSCHEDULE, type = REGULATIONSCHEDULE). Reason: Getting related values for resource with ID = 0x000000050000000d failed. Failed to get related values for source GID = 0x000000050000000d. Entity with GID = 0x000000050000000d does not contain prperty with Id = REGULARINTERVALSCHEDULE..
+2.6.2023. 00:25:06 : Getting related values method started.
+2.6.2023. 00:32:37 : Network Model Service Test Client is up and running...
+2.6.2023. 00:32:37 : Result directory: ../Results
+2.6.2023. 00:32:43 : Apply update method started.
+2.6.2023. 00:32:44 : Apply update method finished. 
+Update result: Succeeded
+Message: Applying delta to network model successfully finished.
+GlobalId pairs:
+Client globalId: 0x00000001ffffffff	 - Server globalId: 0x000000010000000e
+Client globalId: 0x00000002ffffffff	 - Server globalId: 0x000000020000000e
+Client globalId: 0x00000003ffffffff	 - Server globalId: 0x000000030000000e
+Client globalId: 0x00000004ffffffff	 - Server globalId: 0x000000040000000b
+Client globalId: 0x00000005ffffffff	 - Server globalId: 0x000000050000000e
+Client globalId: 0x00000006ffffffff	 - Server globalId: 0x000000060000000b
+Client globalId: 0x00000007ffffffff	 - Server globalId: 0x000000070000000b
+
+2.6.2023. 00:34:02 : Getting related values method started.
+2.6.2023. 00:34:02 : Getting related values method successfully finished.
+2.6.2023. 00:36:28 : Getting related values method started.
+2.6.2023. 00:36:28 : Getting related values method successfully finished.
+2.6.2023. 00:37:42 : Entering association failed. System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at FTN.Services.NetworkModelService.TestClient.Program.InputAssociation() in C:\Users\Nex\Desktop\IES\Projekat\ModelLabsProjekat\ModelLabs\NetworkModelService\Test\NMSTestClient\Program.cs:line 254
+2.6.2023. 00:37:42 : GetRelatedValues failed. Input string was not in a correct format.
+2.6.2023. 00:38:01 : Getting related values method started.
+2.6.2023. 00:38:01 : Getting related values method successfully finished.
+2.6.2023. 00:38:33 : Entering association failed. System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at FTN.Services.NetworkModelService.TestClient.Program.InputAssociation() in C:\Users\Nex\Desktop\IES\Projekat\ModelLabsProjekat\ModelLabs\NetworkModelService\Test\NMSTestClient\Program.cs:line 254
+2.6.2023. 00:38:33 : GetRelatedValues failed. Input string was not in a correct format.
+2.6.2023. 00:39:21 : Getting related values method started.
+2.6.2023. 00:39:21 : Getting related values method successfully finished.

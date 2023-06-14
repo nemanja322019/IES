@@ -1,0 +1,56 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "892cbe15-9ed7-4540-81fa-0eaaba592138": {
+      "ProjectGuid": "892cbe15-9ed7-4540-81fa-0eaaba592138",
+      "DisplayName": "Common",
+      "ColorIndex": 0
+    },
+    "05fa2f21-d4de-4f42-8d8f-ac79993394f6": {
+      "ProjectGuid": "05fa2f21-d4de-4f42-8d8f-ac79993394f6",
+      "DisplayName": "CIMProfileCreator",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "2630d180-1b68-4e84-aeac-42ee8c88b50f": {
+      "ProjectGuid": "2630d180-1b68-4e84-aeac-42ee8c88b50f",
+      "DisplayName": "NetworkModelService",
+      "ColorIndex": 2
+    },
+    "ade96497-7c11-40b6-ae82-57f956c9f104": {
+      "ProjectGuid": "ade96497-7c11-40b6-ae82-57f956c9f104",
+      "DisplayName": "DataModel",
+      "ColorIndex": 3
+    },
+    "e112ffcc-bd88-4056-99e1-0991a0e82588": {
+      "ProjectGuid": "e112ffcc-bd88-4056-99e1-0991a0e82588",
+      "DisplayName": "NetworkModelServiceSelfHost",
+      "ColorIndex": 4
+    },
+    "3dd11384-2cc1-4ee9-9f4a-02b6fe8759c0": {
+      "ProjectGuid": "3dd11384-2cc1-4ee9-9f4a-02b6fe8759c0",
+      "DisplayName": "ModelLabsApp",
+      "ColorIndex": 5
+    },
+    "3c03a41c-be4c-40a8-97d5-5dbac0c34102": {
+      "ProjectGuid": "3c03a41c-be4c-40a8-97d5-5dbac0c34102",
+      "DisplayName": "CIMParser",
+      "ColorIndex": 6
+    },
+    "f680d34f-c148-4314-8914-b2df3e7b17af": {
+      "ProjectGuid": "f680d34f-c148-4314-8914-b2df3e7b17af",
+      "DisplayName": "CIMAdapter",
+      "ColorIndex": 7
+    },
+    "32ee9373-a350-42ac-972b-41b2edaba082": {
+      "ProjectGuid": "32ee9373-a350-42ac-972b-41b2edaba082",
+      "DisplayName": "NMSTestClient",
+      "ColorIndex": 8
+    }
+  },
+  "NextColorIndex": 9
+}
